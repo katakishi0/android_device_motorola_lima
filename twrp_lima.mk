@@ -9,13 +9,13 @@
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Omni stuff.
-$(call inherit-product, vendor/omni/config/common.mk)
+$(call inherit-product, vendor/twrp/config/common.mk)
 
 # Inherit from lima device
 $(call inherit-product, device/motorola/lima/device.mk)
 
 PRODUCT_DEVICE := lima
-PRODUCT_NAME := omni_lima
+PRODUCT_NAME := twrp_lima
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g(8) play
 PRODUCT_MANUFACTURER := motorola
